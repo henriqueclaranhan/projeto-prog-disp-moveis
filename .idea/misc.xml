@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2535" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.2525" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2525" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_calc.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_checkbox.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_daora.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_developer_github.xml" value="0.2484375" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_radio_with_button.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_radio_with_toast.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AndroidStudioProjects/AplicativoShow/app/src/main/res/layout/activity_spinner_switch.xml" value="0.264" />
+        <entry key="..\:/Users/henri/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.2484375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
