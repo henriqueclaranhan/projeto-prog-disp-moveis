@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioWithButtonActivity">
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Qual é o seu nome?"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        app:layout_constraintStart_toStartOf="@+id/ageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextView">
+
+        <RadioButton
+            android:id="@+id/radioButton20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ricardo"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rodolfo"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ronaldo"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Prosseguir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

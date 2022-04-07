@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    tools:context=".CalcActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="92dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Primeiro Número"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Digite um número"
+        android:inputType="numberSigned|numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Segundo Número"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numInput1" />
+
+    <EditText
+        android:id="@+id/numInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Digite um número"
+        android:inputType="numberSigned|numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="RESULTADO"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numInput2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/subtract"
+        app:cornerRadius="10dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="116dp"
+        android:textSize="26dp"
+        android:text="-"
+        app:backgroundTint="#1E88E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sum"
+        app:layout_constraintTop_toBottomOf="@+id/numInput2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sum"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="116dp"
+        android:text="+"
+        android:textSize="22dp"
+        app:backgroundTint="#1E88E5"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/subtract"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numInput2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/divide"
+        app:cornerRadius="10dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:textSize="22dp"
+        android:text="/"
+        app:backgroundTint="#1E88E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/multiply"
+        app:layout_constraintTop_toBottomOf="@+id/subtract" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/multiply"
+        app:cornerRadius="10dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:textSize="32dp"
+        android:text="*"
+        app:backgroundTint="#1E88E5"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sum" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#F44336"
+        android:text="Limpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiply" />
+</androidx.constraintlayout.widget.ConstraintLayout>

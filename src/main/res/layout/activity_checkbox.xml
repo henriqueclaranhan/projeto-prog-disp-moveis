@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckboxActivity">
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Sobre o Palmeiras, assinale as alternativas corretas:"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxMundial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:enabled="true"
+        android:text="Não tem mundial"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/ageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRegando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Estou regando mas não cresce"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMundial"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPequeno" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPequeno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Muito pequeno"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMundial"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMundial" />
+
+    <ImageView
+        android:id="@+id/imageAnswerMundial"
+        android:visibility="invisible"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxMundial"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMundial"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxMundial"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <ImageView
+        android:id="@+id/imageAnswerPequeno"
+        android:visibility="invisible"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxPequeno"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPequeno"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxPequeno"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <ImageView
+        android:id="@+id/imageAnswerRegando"
+        android:visibility="invisible"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxRegando"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxRegando"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxRegando"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <Button
+        android:id="@+id/buttonCheckAlternatives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#2196F3"
+        android:text="Conferir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRegando" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:textSize="34sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRegando" />
+</androidx.constraintlayout.widget.ConstraintLayout>
