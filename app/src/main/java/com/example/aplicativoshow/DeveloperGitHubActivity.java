@@ -4,13 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class DeveloperGitHubActivity extends AppCompatActivity {
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +27,11 @@ public class DeveloperGitHubActivity extends AppCompatActivity {
         }
 
         WebView henriqueGitHubWebView = findViewById(R.id.henriqueGitHubWebView);
-        henriqueGitHubWebView.getSettings().setJavaScriptEnabled(true);
+        WebSettings webSettings = henriqueGitHubWebView.getSettings();
+
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setSupportZoom(false);
+
         henriqueGitHubWebView.loadUrl("https://www.github.com/henriqueclaranhan/");
         henriqueGitHubWebView.setWebViewClient(new WebViewClient());
     }

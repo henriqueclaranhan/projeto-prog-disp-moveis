@@ -24,7 +24,7 @@ public class MainActivity extends ListActivity {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         setContentView(R.layout.activity_main);
 
-        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listOptions);
+        arrayAdapter = new ArrayAdapter<>(this, R.layout.list_item, listOptions);
 
         setListAdapter(arrayAdapter);
     }
