@@ -1,5 +1,5 @@
 <div align="center">
-	<img width=170 src="https://raw.githubusercontent.com/henriqueclaranhan/projeto-prog-disp-moveis/main/src/main/res/mipmap-xxxhdpi/ic_launcher.webp">
+	<img width=170 src="https://raw.githubusercontent.com/henriqueclaranhan/projeto-prog-disp-moveis/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp">
 	<h1>Aplicativo Show</h1>
 	Aplicativo para Android desenvolvido no decorrer das aulas de Programação para Dispositivos Móveis, do Curso Técnico Integrado em Informática oferecido pelo IFMS.
 </div>
